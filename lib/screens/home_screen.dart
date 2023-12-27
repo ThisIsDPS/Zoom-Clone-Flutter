@@ -4,7 +4,7 @@ import 'package:zoom_clone_flutter/screens/history_meeting_screen.dart';
 import 'package:zoom_clone_flutter/screens/meeting_screen.dart';
 import 'package:zoom_clone_flutter/utils/colors.dart';
 import 'package:zoom_clone_flutter/widgets/custom_button.dart';
-import 'package:zoom_clone_flutter/widgets/home_meeting_button.dart';
+// import 'package:zoom_clone_flutter/widgets/home_meeting_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final AuthMethods _authMethods = AuthMethods();
+  // final AuthMethods _authMethods = AuthMethods();
   int _page = 0;
   onPageChanged(int page) {
     setState(() {
@@ -25,14 +25,24 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> pages = [
     MeetingScreen(),
     const HistoryMeetingScreen(),
-    const Text('Contacts'),
+    const Center(
+      child: Text('No Contacts Yet'),
+    ),
     Container(
-      alignment: Alignment.topCenter,
+      margin: const EdgeInsets.symmetric(horizontal: 35),
+      width: double.infinity,
       child: CustomButton(
         text: 'Log Out',
         onPressed: () => AuthMethods().signOut(),
       ),
     ),
+  ];
+
+  List<String> pageTitle = [
+    'Meet & Chat',
+    'Meetings History',
+    'Contacts',
+    'Settings',
   ];
 
   @override
@@ -41,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: backgroundColor,
         elevation: 0,
-        title: const Text('Meet & Chat'),
+        title: Text(pageTitle[_page]),
         centerTitle: true,
       ),
       body: pages[_page],

@@ -61,9 +61,9 @@ class AuthMethods {
   }
 
   // Method to sign out the current user
-  void signOut() async {
+  Future<void> signOut() async {
     try {
-      _auth.signOut();
+      await _auth.signOut();
     } catch (e) {
       print(e);
     }

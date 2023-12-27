@@ -3,7 +3,7 @@ import 'package:zoom_clone_flutter/resources/firestore_methods.dart';
 import 'package:intl/intl.dart';
 
 class HistoryMeetingScreen extends StatelessWidget {
-  const HistoryMeetingScreen({Key? key}) : super(key: key);
+  const HistoryMeetingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +13,12 @@ class HistoryMeetingScreen extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(
             child: CircularProgressIndicator(),
+          );
+        }
+
+        if (!snapshot.hasData || (snapshot.data! as dynamic).docs.isEmpty) {
+          return const Center(
+            child: Text('No history'),
           );
         }
 
