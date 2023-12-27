@@ -12,7 +12,7 @@ class AuthMethods {
 
   // Get a stream of authentication state changes
   Stream<User?> get authChanges => _auth.authStateChanges();
-  
+
   // Get the current user
   User get user => _auth.currentUser!;
 
@@ -25,7 +25,8 @@ class AuthMethods {
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
       // Get authentication details from the signed-in Google user
-      final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+      final GoogleSignInAuthentication? googleAuth =
+          await googleUser?.authentication;
 
       // Create a GoogleAuthProvider credential using the obtained details
       final credential = GoogleAuthProvider.credential(
@@ -34,7 +35,8 @@ class AuthMethods {
       );
 
       // Sign in with the Google credential
-      UserCredential userCredential = await _auth.signInWithCredential(credential);
+      UserCredential userCredential =
+          await _auth.signInWithCredential(credential);
 
       // Get the signed-in user
       User? user = userCredential.user;

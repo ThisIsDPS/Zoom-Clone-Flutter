@@ -4,6 +4,7 @@ import 'package:zoom_clone_flutter/firebase_options.dart';
 import 'package:zoom_clone_flutter/resources/auth_methods.dart';
 import 'package:zoom_clone_flutter/screens/home_screen.dart';
 import 'package:zoom_clone_flutter/screens/login_screen.dart';
+import 'package:zoom_clone_flutter/screens/video_call_screen.dart';
 import 'package:zoom_clone_flutter/utils/colors.dart';
 
 void main() async {
@@ -26,8 +27,9 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
       ),
       routes: {
-        '/login': (context) => LoginScreen(),
-        '/home':(context) => HomeScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/video-call': (context) => const VideoCallScreen(),
       },
       // Persisting the state
       home: StreamBuilder(
