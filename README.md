@@ -9,13 +9,13 @@ User Profile: Display and manage user information with Firebase. <br/>
 Cross-Platform: Developed for both iOS and Android using Flutter. <br/>
 
 # Screenshots
-<img width="327" alt="Screenshot 2024-07-20 at 3 21 04 PM" src="https://github.com/user-attachments/assets/538a4e3a-c50b-42ee-935f-1efeefb601ac"> <br/>
-<img width="327" alt="Screenshot 2024-07-20 at 3 21 27 PM" src="https://github.com/user-attachments/assets/007bdeac-84ea-4735-b7c0-e0c0c0fb6845"> <br/>
-<img width="327" alt="Screenshot 2024-07-20 at 3 21 34 PM" src="https://github.com/user-attachments/assets/fd820cc7-745d-4ce9-8020-891e2b2b6447"> <br/>
-<img width="327" alt="Screenshot 2024-07-20 at 3 21 41 PM" src="https://github.com/user-attachments/assets/9073b283-2778-4e9a-ac46-d59053f92c52"> <br/>
-<img width="327" alt="Screenshot 2024-07-20 at 3 21 44 PM" src="https://github.com/user-attachments/assets/b0b0686c-4713-4ace-a329-3f501a9b9bf7"> <br/>
-<img width="327" alt="Screenshot 2024-07-20 at 3 21 55 PM" src="https://github.com/user-attachments/assets/70cab09e-8165-4d61-a13a-e8df2172fca2"> <br/>
-<img width="327" alt="Screenshot 2024-07-20 at 3 22 02 PM" src="https://github.com/user-attachments/assets/2b1bd0f4-3f77-4181-9db1-b712a37133e3"> <br/>
+<img width="200" alt="Screenshot 2024-07-20 at 3 21 04 PM" src="https://github.com/user-attachments/assets/538a4e3a-c50b-42ee-935f-1efeefb601ac"> 
+<img width="200" alt="Screenshot 2024-07-20 at 3 21 27 PM" src="https://github.com/user-attachments/assets/007bdeac-84ea-4735-b7c0-e0c0c0fb6845"> <br/>
+<img width="200" alt="Screenshot 2024-07-20 at 3 21 34 PM" src="https://github.com/user-attachments/assets/fd820cc7-745d-4ce9-8020-891e2b2b6447"> 
+<img width="200" alt="Screenshot 2024-07-20 at 3 21 41 PM" src="https://github.com/user-attachments/assets/9073b283-2778-4e9a-ac46-d59053f92c52"> <br/>
+<img width="200" alt="Screenshot 2024-07-20 at 3 21 44 PM" src="https://github.com/user-attachments/assets/b0b0686c-4713-4ace-a329-3f501a9b9bf7"> 
+<img width="200" alt="Screenshot 2024-07-20 at 3 21 55 PM" src="https://github.com/user-attachments/assets/70cab09e-8165-4d61-a13a-e8df2172fca2"> <br/>
+<img width="200" alt="Screenshot 2024-07-20 at 3 22 02 PM" src="https://github.com/user-attachments/assets/2b1bd0f4-3f77-4181-9db1-b712a37133e3"> <br/>
 
 # Technologies Used
 Flutter: Cross-platform framework for building native interfaces. <br/>
